@@ -13,6 +13,10 @@ import { LogInComponent } from './log-in/log-in.component';
 import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CurrencyEgPipe } from './pipes/currency-eg.pipe';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+// import { FooterComponent } from './footer/footer.component';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,16 @@ import { CurrencyEgPipe } from './pipes/currency-eg.pipe';
     LogInComponent,
     RegisterComponent,
     NotFoundComponent,
-    CurrencyEgPipe
+    CurrencyEgPipe,
+    // FooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
